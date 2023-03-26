@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         charTypes()
         symbolId()
         isMaxShortHigherThanMaxInt()
+        isSumNotEqualToMaxLong()
     }
 
     fun doSumOfMaxValues() {
@@ -59,5 +60,14 @@ class MainActivity : AppCompatActivity() {
         var isShortHigherThanMax = shortMax > intMax
 
         Log.i(TAG, "maxShort higher than maxInt? $isShortHigherThanMax")
+    }
+
+    fun isSumNotEqualToMaxLong(){
+//        Sukurk Boolien tipo kintamajį ir patikrink ar kintamųjų suma ir maxLong
+//        reikšmės yra nelygios
+        var sumOfMax = Byte.MAX_VALUE + Short.MAX_VALUE + Int.MAX_VALUE + Long.MAX_VALUE
+        var isSumNotEqualMaxLong = sumOfMax != Long.MAX_VALUE
+
+        Log.i(TAG, "Is sum of max values not equal to maxLong? $isSumNotEqualMaxLong")
     }
 }
