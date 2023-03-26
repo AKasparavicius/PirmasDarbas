@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         doSumOfMaxValues()
+        charTypes()
     }
 
     fun doSumOfMaxValues() {
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         Log.i(
             TAG, "maxByte: $maxByte, maxShort: $maxShort, maxInt: $maxInt" +
                     ", maxLong: $maxLong"
-             )
+        )
 
 //        Sudėkite visų, aukščiau uždeklaruotų, sveikų skaičių reiksmes ir gauta
 //        rezultatą priskirkite naujam kintamajam pavadinimu 'suma'
@@ -32,5 +33,13 @@ class MainActivity : AppCompatActivity() {
         var suma = maxByte + maxShort + maxInt + maxLong
 
         Log.i(TAG, "Sum of max values: $suma")
+    }
+
+    fun charTypes() {
+//      Sukurkti du Char tipo kintamuosius ir priskirti reikšmes: 88, %
+        var exampleChar1: Char = 88.toChar()
+        var exampleChar2: Char = '%'
+
+        Log.i(TAG, "char1: $exampleChar1, char2: $exampleChar2")
     }
 }
