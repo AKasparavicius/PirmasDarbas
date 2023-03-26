@@ -25,5 +25,12 @@ class MainActivity : AppCompatActivity() {
             TAG, "maxByte: $maxByte, maxShort: $maxShort, maxInt: $maxInt" +
                     ", maxLong: $maxLong"
              )
+
+//        Sudėkite visų, aukščiau uždeklaruotų, sveikų skaičių reiksmes ir gauta
+//        rezultatą priskirkite naujam kintamajam pavadinimu 'suma'
+
+        var suma = maxByte + maxShort + maxInt + maxLong
+
+        Log.i(TAG, "Sum of max values: $suma")
     }
 }
