@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         doSumOfMaxValues()
         charTypes()
+        symbolId()
     }
 
     fun doSumOfMaxValues() {
@@ -41,5 +42,12 @@ class MainActivity : AppCompatActivity() {
         var exampleChar2: Char = '%'
 
         Log.i(TAG, "char1: $exampleChar1, char2: $exampleChar2")
+    }
+
+    fun symbolId() {
+//      Nustatykite '*' simbolio id
+        var mySymbol = '*'
+
+        Log.i(TAG, "symbolId: ${mySymbol.code}")
     }
 }
