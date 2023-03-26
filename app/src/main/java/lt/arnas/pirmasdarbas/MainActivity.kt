@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         doSumOfMaxValues()
         charTypes()
         symbolId()
+        isMaxShortHigherThanMaxInt()
     }
 
     fun doSumOfMaxValues() {
@@ -49,5 +50,14 @@ class MainActivity : AppCompatActivity() {
         var mySymbol = '*'
 
         Log.i(TAG, "symbolId: ${mySymbol.code}")
+    }
+
+    fun isMaxShortHigherThanMaxInt() {
+//      Sukurti Boolien tipo kintamajį ir patikrink ar maxShort yra daugiau uz maxInt
+        var shortMax = Short.MAX_VALUE
+        var intMax = Int.MAX_VALUE
+        var isShortHigherThanMax = shortMax > intMax
+
+        Log.i(TAG, "maxShort higher than maxInt? $isShortHigherThanMax")
     }
 }
